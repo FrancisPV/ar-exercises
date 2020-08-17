@@ -9,4 +9,8 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+@store7 = Store.find_by(name: 'Richmond')
+
+Montreal = Store.create(name: "", annual_revenue: "-190000", mens_apparel: false, womens_apparel: false)
+
+puts "Montreal: #{Montreal}"
